@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package toDo;
+
+import "toDo.proto";
+
+service ToDoService{
+    rpc Create(CreateRequest) returns(CreateResponse);
+    rpc Get(GetRequest) returns(Todo);
+};

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package toDo;
+
+message CreateRequest{
+    string name = 1;
+    string title = 2;
+}
+
+message CreateResponse{
+    string id = 1;
+}
+
+message Todo{
+    string name = 1;
+    string title = 2;
+    string id = 3;
+}
+
+message GetRequest{
+    string id = 1;
+}
